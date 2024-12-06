@@ -11,8 +11,7 @@
         <div id="left">
             <!-- hier komt de klok -->
              <div class="clock-container">
-                <div class="clock-screen">
-
+                <!-- <div class="clock-screen">
                         <div class="hour" style="--i: 1;"></div>
                         <div class="hour" style="--i: 2;"></div>
                         <div class="hour" style="--i: 3;"></div>
@@ -24,19 +23,49 @@
                         <div class="hour" style="--i: 9;"></div>
                         <div class="hour" style="--i: 10;"></div>
                         <div class="hour" style="--i: 11;"></div>
-                        <div class="hour" style="--i: 12;"></div>
+                        <div class="hour" style="--i: 12;"></div> 
+                        <div class="pointerhour"></div>  
+                        <div class="pointerminute"></div>  
 
-             
-
-                </div>
+                </div> -->
+                <div id="klok">
+                    <div id="wijzer-uur"></div>
+                    <div id="wijzer-min"></div>
+                    <div id="wijzer-sec">
+                      <div class="line"></div>
+                      <div class="circle"></div>
+                      <div class="line"></div>
+                    </div>
+                    <div id="minuten"></div>
+                    <div id="logo"></div>
+                  </div>
              </div>
         </div>
         <div id="middle">
-            <div class="screen-info"></div>
+            <div class="screen-info">
+                <span id="eta-min">1</span>
+                <span id="eta-span">minuut</span>
+                <span id="train-type">Intercity</span>
+                <span id="train-name">Heerlen</span>
+                <img id="ns-logo" src="/assets/img/ns_logo.png" alt="">
+                <img src="/assets/img/train-letters.png" alt="" id="train-letters">
+                <div class="infobar">
+                    <span id="infospan">Hierna/next: 08:54 IC Venlo</span>
+                    <span id="inforoute">Via 's Hertogenbosch, Eindhoven,<br> Weert, Roermond en Sittard</span>
+                </div>
+
+            </div>
+
         </div>
         <div id="right">
-            <div class="track-info"></div>
+            <div class="track-wrapper">
+                <div class="square absolute"></div>
+                <span class="spoor absolute">spoor</span>
+                <span class="spoorinfo absolute">18</span>
+                <span class="b absolute">b</span>
+            </div>
         </div>
     </div>
 </body>
+<script src="/assets/js/script.js"></script>
 </html>
